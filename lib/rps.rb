@@ -22,12 +22,16 @@ class Rock_Paper_Scissors
       outcome = 'Draw'
     elsif !choices_selected.include?('scissors') && choices_selected[0] == 'paper'
         outcome = 'Computer wins'
+        computer_tally += 1
     elsif !choices_selected.include?('paper') && choices_selected[0] == 'rock'
         outcome = 'Computer wins'
+        computer_tally += 1
     elsif !choices_selected.include?('rock') && choices_selected[0] == 'scissors'
         outcome = 'Computer wins'
+        computer_tally += 1
       else
         outcome = 'Player wins'
+        player_tally += 1
       end
       outcome
     end
